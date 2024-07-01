@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import CabinList from "../_components/CabinList";
 import Spinner from "../_components/Spinner";
 
-export default async function Page() {
+export default function Page() {
   return (
     <div>
       <h1 className="mb-5 text-4xl font-medium text-accent-400">
