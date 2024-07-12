@@ -11,6 +11,7 @@ const josefin = Josefin_Sans({
 import "@/app/_styles/globals.css";
 import Header from "./_components/Header";
 import { ReservationProvider } from "./_components/ReservationContext";
+import Script from "next/script";
 
 export const metadata = {
   title: {
@@ -35,6 +36,11 @@ export default function RootLayout({ children }) {
           </main>
         </div>
       </body>
+      <Script
+        defer
+        src="https://umami.worldwise.site/script.js"
+        data-website-id="93b7ae4e-6cc0-4e81-897f-9ac856adf8f2"
+      ></Script>
     </html>
   );
 }
